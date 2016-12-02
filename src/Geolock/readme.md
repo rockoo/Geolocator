@@ -12,12 +12,15 @@ use Fantasyrock\Geocoder\Locator;
 $locator = new Locator(new Adapter, new Transformer);
 $location = $locator->find($_SERVER['REMOTE_ADDR']);
 
-var_dump($location)
 
-// Result
+// Result as Illuminate\Support\Collection
 [
-    'country' => 'Slovenia',
-    'iso2'    => 'SI',
-    'city'    => 'Ljubljana'
+    'country' => 'United States',
+    'iso2'    => 'US',
+    'city'    => 'Miami'
 ]
+
+$location->get('country'); // Full country name
+$location->get('iso2'); // Country code ISO2
+$location->get('city'); // Full city name
 ```
