@@ -1,6 +1,6 @@
 {
-    "name": "frm/packages",
-    "description": "Packages dev env",
+    "name": "fantasyrock/geolock",
+    "description": "Simple geolocation Library",
     "authors": [
         {
             "name": "Rok Nemet",
