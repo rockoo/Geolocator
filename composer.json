@@ -19,5 +19,10 @@
     "require-dev": {
         "phpunit/phpunit": "^5.7",
         "mockery/mockery": "^0.9.6"
+    },
+    "config": {
+        "preferred-install": {
+            "fantasyrock/geolock": "auto"
+        }
     }
 }
