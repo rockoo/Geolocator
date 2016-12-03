@@ -17,11 +17,11 @@ class RestAdapterTest extends TestCase
 	public function test_it_can_call_api_client ()
 	{
 
-		$api = m::mock(CanMakeRequestsToRestApi::class);
+		$api         = m::mock(CanMakeRequestsToRestApi::class);
 		$transformer = m::mock(CanTransformRestResult::class);
-		$locator = new Locator($api, $transformer);
+		$locator     = new Locator($api, $transformer);
 
-		$apiResult = '{"country": "Slovenia", "alpha2": "SI", "city": "Ljubljana"}';
+		$apiResult = '{"country": "Usa", "alpha2": "US", "city": "Miami"}';
 		$api->shouldReceive('target')->once()->andReturn($apiResult);
 
 		$data = json_decode($apiResult);
