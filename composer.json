@@ -21,4 +21,9 @@
         "mockery/mockery": "^0.9.6"
     },
     "minimum-stability": "dev"
+    "config": {
+        "preferred-install": {
+            "fantasyrock/geolock": "auto"
+        }
+    }
 }
